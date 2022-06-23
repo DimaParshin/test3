@@ -28,11 +28,11 @@
 		// Load the assets.
 		assetManager = new spine.AssetManager("assets/");
 		assetManager.loadText("skeleton.json");
-        assetManager.loadTextureAtlas("skeleton.atlas.txt");
+        assetManager.loadTextureAtlas("skeleton.atlas");
 		await assetManager.loadAll();
 
 		// Create the texture atlas and skeleton data.
-        let atlas = assetManager.require("skeleton.atlas.txt");
+        let atlas = assetManager.require("skeleton.atlas");
 		let atlasLoader = new spine.AtlasAttachmentLoader(atlas);
 		let skeletonJson = new spine.SkeletonJson(atlasLoader);
         let skeletonData = skeletonJson.readSkeletonData(assetManager.require("skeleton.json"));
