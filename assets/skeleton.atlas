@@ -1,13 +1,13 @@
 
 skeleton.png
-size: 2048,1024
+size: 256,256
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-BG
+circle_rays
   rotate: false
   xy: 2, 2
-  size: 1760, 1010
-  orig: 1760, 1010
+  size: 223, 204
+  orig: 223, 204
   offset: 0, 0
   index: -1
